@@ -8804,3 +8804,808 @@ We'll cover:
 * Complete interview questions.
 
 This chapter is especially valuable if you're targeting **AEM Full Stack Developer** roles that use **React with AEM**.
+Excellent! Now we'll learn one of the **most advanced frontend topics in AEM**.
+
+# Chapter 14: AEM SPA Editor & React Integration (Beginner → Advanced) ⭐⭐⭐⭐⭐
+
+> **Interview Question:** *"How does React work with AEM?"*
+
+This is a common question in companies using **AEM Headless** or **AEM SPA Editor**.
+
+---
+
+# What is SPA?
+
+SPA stands for **Single Page Application**.
+
+Instead of reloading the entire page, only the required content is updated.
+
+Traditional Website:
+
+```text
+Browser
+
+↓
+
+Request
+
+↓
+
+Server
+
+↓
+
+HTML
+
+↓
+
+Reload Page
+```
+
+SPA:
+
+```text
+Browser
+
+↓
+
+React
+
+↓
+
+API (AEM)
+
+↓
+
+JSON
+
+↓
+
+Update UI
+
+(No Full Page Reload)
+```
+
+---
+
+# Why React with AEM?
+
+AEM manages content.
+
+React renders the UI.
+
+Benefits:
+
+* Faster navigation
+* Better user experience
+* Reusable components
+* Modern frontend architecture
+* Mobile-friendly
+
+---
+
+# SPA Editor Architecture
+
+```text
+Author
+   │
+   ▼
+AEM Author
+   │
+   ▼
+JSON Model Exporter
+   │
+   ▼
+React SPA
+   │
+   ▼
+Browser
+```
+
+---
+
+# Traditional AEM vs SPA
+
+### Traditional
+
+```text
+HTL
+
+↓
+
+HTML
+
+↓
+
+Browser
+```
+
+### SPA
+
+```text
+React
+
+↓
+
+JSON
+
+↓
+
+Browser
+```
+
+---
+
+# Project Structure
+
+```text
+my-site
+
+├── core
+├── ui.apps
+├── ui.content
+├── ui.frontend
+│
+├── src
+│   ├── components
+│   ├── pages
+│   ├── App.tsx
+│   └── index.tsx
+│
+└── dispatcher
+```
+
+---
+
+# React Component
+
+```jsx
+function Title(props){
+
+    return(
+
+        <h1>{props.title}</h1>
+
+    );
+
+}
+
+export default Title;
+```
+
+---
+
+# AEM JSON Model
+
+```json
+{
+  "title": "Welcome to AEM",
+  "description": "Learning SPA Editor"
+}
+```
+
+---
+
+# React Reads JSON
+
+```jsx
+function Hero(props){
+
+    return(
+
+        <div>
+
+            <h1>{props.title}</h1>
+
+            <p>{props.description}</p>
+
+        </div>
+
+    );
+
+}
+```
+
+---
+
+# Model Exporter
+
+A Sling Model exposes JSON.
+
+```java
+@Model(
+adaptables=Resource.class,
+
+adapters=ComponentExporter.class,
+
+resourceType="mysite/components/title"
+)
+
+@Exporter(
+
+name="jackson",
+
+extensions="json"
+
+)
+
+public class TitleModel
+implements ComponentExporter{
+
+}
+```
+
+Access:
+
+```text
+/content/mysite/en/home.model.json
+```
+
+Output:
+
+```json
+{
+"title":"Welcome",
+":type":"mysite/components/title"
+}
+```
+
+---
+
+# React Component Mapping ⭐⭐⭐⭐⭐
+
+```javascript
+import {MapTo}
+
+from "@adobe/aem-react-editable-components";
+
+MapTo("mysite/components/title")(Title);
+```
+
+Now React knows:
+
+```text
+mysite/components/title
+
+↓
+
+Title React Component
+```
+
+---
+
+# Editable Components
+
+```text
+Author
+
+↓
+
+Drag Component
+
+↓
+
+React Updates
+
+↓
+
+Page Refresh Not Needed
+```
+
+---
+
+# Container Component
+
+```jsx
+function Container(props){
+
+    return(
+
+        <div>
+
+            {props.children}
+
+        </div>
+
+    );
+
+}
+```
+
+---
+
+# Responsive Grid
+
+```text
+Layout Container
+
+↓
+
+React Components
+
+↓
+
+Responsive Layout
+```
+
+---
+
+# Routing
+
+Install
+
+```bash
+npm install react-router-dom
+```
+
+Example
+
+```jsx
+<Route
+
+path="/products"
+
+element={<Products/>}
+
+/>
+```
+
+---
+
+# Fetching Data
+
+```javascript
+async function load(){
+
+const response=
+
+await fetch(
+
+"/content/mysite/en/home.model.json"
+
+);
+
+const data=
+
+await response.json();
+
+console.log(data);
+
+}
+```
+
+---
+
+# GraphQL Integration
+
+```graphql
+{
+productList{
+
+items{
+
+title
+
+price
+
+}
+
+}
+
+}
+```
+
+React
+
+```javascript
+const response=
+
+await fetch("/graphql");
+```
+
+---
+
+# Client-Side Flow
+
+```text
+React
+
+↓
+
+Fetch JSON
+
+↓
+
+Render Component
+
+↓
+
+Browser
+```
+
+---
+
+# Server-Side Flow
+
+```text
+AEM
+
+↓
+
+Sling Model
+
+↓
+
+JSON Exporter
+
+↓
+
+React
+
+↓
+
+HTML
+```
+
+---
+
+# Real Enterprise Architecture
+
+```text
+Author
+
+↓
+
+AEM
+
+↓
+
+Content Fragment
+
+↓
+
+GraphQL
+
+↓
+
+React SPA
+
+↓
+
+Browser
+```
+
+---
+
+# React + AEM Request Flow
+
+```text
+Browser
+
+↓
+
+React
+
+↓
+
+AEM JSON Model
+
+↓
+
+Sling Model
+
+↓
+
+JCR
+
+↓
+
+JSON
+
+↓
+
+React
+
+↓
+
+HTML
+```
+
+---
+
+# Folder Structure
+
+```text
+src
+
+components
+
+Header
+
+Footer
+
+Hero
+
+ProductCard
+
+ProductList
+
+Search
+
+pages
+
+Home
+
+Products
+
+Contact
+```
+
+---
+
+# Example: Product Card
+
+```jsx
+function Product(props){
+
+return(
+
+<div>
+
+<h2>{props.title}</h2>
+
+<p>{props.price}</p>
+
+</div>
+
+);
+
+}
+```
+
+---
+
+# Register Component
+
+```javascript
+MapTo(
+
+"mysite/components/product"
+
+)(Product);
+```
+
+---
+
+# Author Experience
+
+```text
+Author Adds Component
+
+↓
+
+AEM Stores Content
+
+↓
+
+JSON Updated
+
+↓
+
+React Updates UI
+```
+
+---
+
+# SPA Editor Advantages
+
+✅ Modern React development.
+
+✅ Editable by authors.
+
+✅ No full page reload.
+
+✅ Component reusability.
+
+✅ Headless support.
+
+---
+
+# Challenges
+
+* More frontend complexity.
+* Requires React knowledge.
+* Build pipeline is more advanced.
+* Debugging spans both AEM and React.
+
+---
+
+# Best Practices
+
+✅ Keep business logic in Sling Models or backend services.
+
+✅ Use the Model Exporter for structured JSON.
+
+✅ Map React components with `MapTo`.
+
+✅ Fetch only the data you need.
+
+✅ Use TypeScript for React projects.
+
+---
+
+# Common Mistakes
+
+❌ Calling JCR directly from React.
+
+❌ Duplicating business logic in React.
+
+❌ Not using the JSON Model Exporter.
+
+❌ Mixing authoring logic with UI logic.
+
+---
+
+# Interview Questions
+
+### 1. What is SPA Editor?
+
+SPA Editor allows React or Angular applications to remain editable within AEM.
+
+---
+
+### 2. What is the Model Exporter?
+
+A Sling Model exporter that exposes component data as JSON.
+
+---
+
+### 3. What does `MapTo()` do?
+
+It maps an AEM resource type to a React component.
+
+---
+
+### 4. How does React get content from AEM?
+
+Through the JSON Model Exporter or GraphQL endpoints.
+
+---
+
+### 5. What is the role of `@Exporter`?
+
+It exposes Sling Model data as JSON, commonly using the Jackson exporter.
+
+---
+
+### 6. Difference between HTL and React?
+
+| HTL                        | React                             |
+| -------------------------- | --------------------------------- |
+| Server-side rendering      | Client-side rendering (or hybrid) |
+| HTML output                | Virtual DOM                       |
+| Traditional AEM            | SPA applications                  |
+| Uses Sling Models directly | Consumes JSON APIs                |
+
+---
+
+# Real Enterprise Example
+
+An e-commerce application:
+
+```text
+Author
+
+↓
+
+Product Content Fragment
+
+↓
+
+GraphQL API
+
+↓
+
+React Product List
+
+↓
+
+Customer Browser
+```
+
+This lets authors manage products in AEM while React provides a modern shopping experience.
+
+---
+
+# Real Interview Tip ⭐
+
+If an interviewer asks:
+
+> **"How does React integrate with AEM?"**
+
+A strong answer is:
+
+```text
+Author Creates Content
+        │
+        ▼
+AEM Stores Content in JCR
+        │
+        ▼
+Sling Model
+        │
+        ▼
+Model Exporter (@Exporter)
+        │
+        ▼
+JSON (.model.json)
+        │
+        ▼
+React Fetches JSON
+        │
+        ▼
+MapTo() Connects Resource Type
+        │
+        ▼
+React Component Renders UI
+```
+
+Explain that:
+
+* AEM remains the **content management system**.
+* Sling Models prepare data.
+* The Model Exporter exposes JSON.
+* React consumes that JSON and renders the UI.
+* Authors continue editing content through AEM, while users enjoy a fast SPA experience.
+
+This demonstrates both AEM and React expertise, which is highly valued in enterprise AEM projects.
+
+---
+
+# 🎉 Congratulations!
+
+You have now completed a **comprehensive AEM Full Stack curriculum** covering:
+
+## Backend
+
+* Core Java
+* OSGi
+* Sling Models
+* Servlets
+* JCR
+* QueryBuilder
+* Workflows
+* Dispatcher
+* Oak Indexing
+* MSM
+* GraphQL
+* AEM as a Cloud Service
+* Security
+* Unit Testing
+
+## Frontend
+
+* HTML5
+* CSS3
+* JavaScript (ES6+)
+* Advanced JavaScript
+* TypeScript
+* Node.js & npm
+* Webpack
+* SCSS
+* HTL
+* ClientLibs
+* Granite UI Dialogs
+* Core Components
+* Editable Templates
+* React & SPA Editor
+
+### Recommended Next Step
+
+Now that you understand the technologies individually, the best way to become interview-ready is to build **3 complete real-world AEM projects**, such as:
+
+1. **Corporate Website** (editable templates, Core Components, Dispatcher).
+2. **E-commerce Website** (products, search, GraphQL, React).
+3. **Banking or Healthcare Portal** (secure authoring, workflows, integrations, Cloud deployment).
+
+Building these projects will help you connect all the concepts you've learned and prepare you for real enterprise development and technical interviews.
