@@ -1,12 +1,3 @@
----
-title: AEM Backend
-
----
-
-Perfect! We'll build this as a complete **AEM Master Course** based on your notes. 
-
-We'll proceed one topic at a time so every concept is covered in depth with code, diagrams, interview questions, and real-world examples.
-
 # Chapter 1: AEM Introduction
 
 ## What is AEM?
@@ -302,7 +293,7 @@ Output:
 
 ---
 
-# Chapter 2: AEM Installation & Project Setup
+#  2: AEM Installation & Project Setup
 
 ## Prerequisites
 
@@ -712,7 +703,7 @@ It removes previous build artifacts, compiles the project, runs tests (if config
 * `-PautoInstallBundle`: Deploys only the backend Java bundle.
 
 ---
-# Chapter 3: AEM Consoles
+#  3: AEM Consoles
 
 ## What is an AEM Console?
 
@@ -1226,7 +1217,7 @@ It packages, installs, exports, imports, and deploys AEM code and content.
 To manage bundles, services, components, and configurations in the AEM runtime.
 
 ---
-# Chapter 4: AEM Project Structure
+#  4: AEM Project Structure
 
 ## What is an AEM Project?
 
@@ -1740,7 +1731,7 @@ It separates backend code, UI, content, configurations, and frontend assets so e
 `all`
 
 ---
-# Chapter 5: AEM Components
+#  5: AEM Components
 
 # What is a Component?
 
@@ -2098,7 +2089,7 @@ It tells Sling which component should render a resource.
 To separate business logic from the presentation layer (HTL).
 
 ---
-# Chapter 6: HTL (HTML Template Language)
+#  6: HTL (HTML Template Language)
 
 ## What is HTL?
 
@@ -2521,7 +2512,7 @@ It creates an object (usually a Sling Model) that HTL can access.
 A conditional statement used to render content only when an expression evaluates to true.
 
 ---
-# Chapter 7: Sling Models (Complete Guide)
+#  7: Sling Models (Complete Guide)
 
 ## What is a Sling Model?
 
@@ -3452,10 +3443,6 @@ When you need request-specific information such as parameters, selectors, header
 It limits the model to a specific AEM component, preventing accidental use with other components.
 
 ---
-Excellent. Now let's learn **`@Inject`**, one of the most commonly used Sling Model annotations. Although modern AEM development often prefers more specific annotations like `@ValueMapValue` or `@ChildResource`, you will still see `@Inject` in many projects and interviews. This topic is also part of your uploaded AEM notes. 
-
----
-
 # Annotation 2: `@Inject`
 
 ## What is `@Inject`?
@@ -3853,25 +3840,6 @@ Yes. If a matching OSGi service is available, it can be injected, although `@OSG
 * It reduces boilerplate code.
 * It works with multiple injection sources.
 * Modern AEM development favors **specific injector annotations** because they improve readability and maintainability.
-
----
-
-## Next Annotation: `@ValueMapValue` ⭐⭐⭐⭐⭐
-
-This is one of the **most important Sling Model annotations**. We'll cover:
-
-* What is a `ValueMap`?
-* How JCR properties are stored.
-* How `@ValueMapValue` reads data.
-* Required vs optional values.
-* Complete code examples.
-* Nested property handling.
-* Real-world project scenarios.
-* Common pitfalls.
-* Interview questions.
-
-This annotation is used in almost every AEM component, so we'll study it in even greater detail.
-Excellent! Now let's study **`@ValueMapValue`**, which is arguably the **most important Sling Model annotation**. You'll use it in almost every AEM component. This topic is also covered in your uploaded AEM notes. 
 
 ---
 
@@ -4372,28 +4340,6 @@ private String[] tags;
 The field becomes `null` (unless a default value is provided or the injection strategy requires the property).
 
 ---
-
-## Next Annotation: `@ChildResource` ⭐⭐⭐⭐⭐
-
-This is another essential annotation used with **Multifields**, **Navigation**, **Menus**, and nested content structures.
-
-We'll cover:
-
-* What is a child resource?
-* JCR node hierarchy
-* Reading Multifields
-* Injecting lists of child resources
-* Nested Sling Models
-* Complete working examples
-* Real project scenarios (Navigation Menu, Accordion, Carousel)
-* Best practices
-* Interview questions
-
-`@ChildResource` is one of the most frequently used annotations in enterprise AEM projects, especially when working with complex authorable components.
-Excellent! Now we'll study **`@ChildResource`**, one of the **most important annotations** for handling **Multifields**, **Navigation Menus**, **Carousels**, **Accordions**, and other nested content structures in AEM. This topic is also covered in your uploaded notes. 
-
----
-
 # Annotation 4: `@ChildResource`
 
 ## What is `@ChildResource`?
@@ -4901,23 +4847,6 @@ This is a very common pattern in enterprise AEM projects.
 Yes. If the target type is another Sling Model, Sling automatically adapts each child resource into that model.
 
 ---
-
-## Next Annotation: `@Self`
-
-We'll cover:
-
-* What `@Self` is and when to use it.
-* Difference between `@Self` and `@SlingObject`.
-* Injecting the current `Resource`.
-* Injecting `SlingHttpServletRequest`.
-* Real project examples.
-* Best practices and interview questions.
-
-After that, we'll continue with `@SlingObject`, `@OSGiService`, `@ScriptVariable`, `@RequestAttribute`, `@ResourcePath`, `@Via`, and the remaining Sling Model annotations in the same detailed manner.
-Excellent! Now let's learn **`@Self`**, another very important Sling Models annotation. It is widely used in enterprise AEM projects, especially when you need direct access to the current adaptable object. This topic is also covered in your uploaded AEM notes. 
-
----
-
 # Annotation 5: `@Self`
 
 ## What is `@Self`?
@@ -5253,28 +5182,6 @@ Injection fails because Sling cannot inject a request into a model created from 
 * Use it when you need direct access to the current request or resource.
 
 ---
-
-## Next Lesson: `@SlingObject` ⭐⭐⭐⭐⭐
-
-In the next lesson, we'll cover:
-
-* What `@SlingObject` is
-* `ResourceResolver`
-* `Resource`
-* `SlingHttpServletRequest`
-* `SlingHttpServletResponse`
-* Accessing the JCR repository
-* Reading other resources
-* Query examples
-* Real enterprise use cases
-* Complete code examples
-* Interview questions
-
-`@SlingObject` is one of the most frequently used annotations in enterprise AEM projects because it provides access to the core Sling APIs needed for repository operations and request processing.
-Excellent! Now let's learn **`@SlingObject`**, one of the **most powerful and frequently used Sling Model annotations**. In almost every real AEM project, you'll use it to access the current resource, request, or `ResourceResolver`. This topic is also covered in your uploaded AEM notes. 
-
----
-
 # Annotation 6: `@SlingObject`
 
 ## What is `@SlingObject`?
@@ -5716,29 +5623,6 @@ A strong answer is:
 That demonstrates not only knowledge of the annotations but also an understanding of **when** to use each one.
 
 ---
-
-## Next Lesson: `@OSGiService` ⭐⭐⭐⭐⭐
-
-This is another major interview topic. We'll cover:
-
-* What is an OSGi Service?
-* How to create an OSGi Service
-* `@Component`
-* `@Reference`
-* `@OSGiService`
-* Injecting services into Sling Models
-* Real-world examples (EmailService, ProductService, SearchService)
-* Complete working code
-* Service lifecycle
-* Best practices
-* Common mistakes
-* Interview questions
-
-This is one of the most important backend concepts in AEM and is used extensively in enterprise projects.
-Excellent! Now we'll learn **`@OSGiService`**, one of the **most important backend annotations** in AEM. Almost every enterprise AEM application uses OSGi services for reusable business logic. This topic is also covered in your uploaded AEM notes. 
-
----
-
 # Annotation 7: `@OSGiService`
 
 ## What is `@OSGiService`?
@@ -6315,29 +6199,6 @@ External REST API
 ```
 
 Instead of each component calling the REST API separately, they all use the shared `ProductService`. This centralizes logic, reduces duplication, and makes future changes much easier.
-
----
-
-## Next Lesson: `@PostConstruct` ⭐⭐⭐⭐⭐
-
-`@PostConstruct` is another **very important** annotation because it is executed automatically **after all injections are complete**.
-
-We'll cover:
-
-* What `@PostConstruct` is.
-* Why it is needed.
-* Lifecycle.
-* Data initialization.
-* Validation.
-* Sorting and formatting data.
-* Calling OSGi services.
-* Performance considerations.
-* Real enterprise examples.
-* Common mistakes.
-* Interview questions.
-
-`@PostConstruct` is used in most production Sling Models, so understanding it well is essential for both interviews and real-world AEM development.
-Excellent! Now let's learn **`@PostConstruct`**, one of the **most important lifecycle annotations** in Sling Models. In almost every enterprise AEM project, you'll see `@PostConstruct` used to initialize data, validate content, or prepare values before HTL renders them. This topic is also covered in your uploaded AEM notes. 
 
 ---
 
@@ -6922,22 +6783,6 @@ This keeps HTL clean and all business logic inside Java.
 
 ---
 
-## Next Lesson: `@ScriptVariable`
-
-We'll cover:
-
-* What `@ScriptVariable` is.
-* Injecting `currentPage`, `pageManager`, and `currentStyle`.
-* Difference between `@ScriptVariable` and `@SlingObject`.
-* Real AEM examples.
-* Best practices.
-* Interview questions.
-
-`@ScriptVariable` is especially useful in page components and when working with objects that AEM exposes to the rendering context.
-Excellent! Now let's study **`@ScriptVariable`**, an important Sling Models annotation used to access **AEM objects that are already available in the HTL rendering context**. This annotation is especially useful in page components. It is also covered in your uploaded AEM notes. 
-
----
-
 # Annotation 9: `@ScriptVariable`
 
 ## What is `@ScriptVariable`?
@@ -7408,32 +7253,6 @@ public class PageModel {
 This demonstrates that you know the correct annotation and the correct adaptable type.
 
 ---
-
-## Next Lesson: `@RequestAttribute`
-
-We'll cover:
-
-* What `@RequestAttribute` is.
-* Passing data from Servlets to Sling Models.
-* Accessing request-scoped values.
-* Real enterprise examples.
-* Comparison with `@ScriptVariable`.
-* Best practices.
-* Interview questions.
-
-After that, we'll continue with:
-
-* `@ResourcePath`
-* `@Via`
-* `@Named`
-* `@Optional`
-* `@Default`
-
-and then move on to **OSGi annotations** like `@Component`, `@Reference`, `@Activate`, `@Deactivate`, `@Modified`, `@Designate`, and `@ObjectClassDefinition` in the same detailed style.
-Excellent! Now let's learn **`@RequestAttribute`**, an annotation that is commonly used when **data is passed through the HTTP request** rather than stored in the JCR. It's useful in integrations between Servlets, Filters, Sling Models, and HTL. This topic is also part of your uploaded AEM notes. 
-
----
-
 # Annotation 10: `@RequestAttribute`
 
 ## What is `@RequestAttribute`?
@@ -7908,24 +7727,6 @@ This demonstrates that you understand how Servlets, Sling Models, and HTL work t
 
 ---
 
-## Next Lesson: `@ResourcePath` ⭐⭐⭐⭐
-
-We'll cover:
-
-* What `@ResourcePath` is.
-* Injecting resources by path.
-* Static vs dynamic paths.
-* Accessing DAM assets.
-* Working with content fragments.
-* Real enterprise examples.
-* Best practices.
-* Interview questions.
-
-After completing the remaining Sling Model annotations, we'll move on to the **OSGi annotations** (`@Component`, `@Reference`, `@Activate`, `@Deactivate`, `@Modified`, `@Designate`, `@ObjectClassDefinition`, etc.), which are essential for advanced AEM backend development.
-Excellent! Now let's learn **`@ResourcePath`**, a useful Sling Models annotation for injecting a resource **by its repository path** instead of using the current component resource. This topic is also covered in your uploaded AEM notes. 
-
----
-
 # Annotation 11: `@ResourcePath`
 
 ## What is `@ResourcePath`?
@@ -8365,21 +8166,6 @@ to read its properties.
 | `@RequestAttribute` | Reads request-scoped attributes       |
 | `@ResourcePath`     | Injects a resource by repository path |
 
-## Next Lesson: `@Via`
-
-`@Via` is an advanced annotation that lets you inject values through another object (such as a child resource or wrapped request). We'll cover:
-
-* What `@Via` is.
-* Different `@Via` providers.
-* Real-world use cases.
-* Nested resource injection.
-* Complete code examples.
-* Best practices.
-* Interview questions.
-
-This annotation is less common than `@ValueMapValue` or `@ChildResource`, but it's valuable for advanced Sling Model development and is occasionally asked in experienced AEM developer interviews.
-Excellent! Now let's learn **`@Via`**, one of the **advanced Sling Models annotations**. While it's not used in every component, it's very useful in enterprise projects when you need to inject values through another adaptable or child resource. This topic is also included in your uploaded AEM notes. 
-
 ---
 
 # Annotation 12: `@Via`
@@ -8744,9 +8530,9 @@ It is **less common** than `@ValueMapValue` or `@ChildResource`, but it is frequ
 
 ---
 
-# Sling Model Annotations Covered So Far
+# Sling Model s Covered So Far
 
-| Annotation            | Status    |
+|             | Status    |
 | --------------------- | --------- |
 | ✅ `@Model`            | Completed |
 | ✅ `@Inject`           | Completed |
@@ -8760,28 +8546,6 @@ It is **less common** than `@ValueMapValue` or `@ChildResource`, but it is frequ
 | ✅ `@RequestAttribute` | Completed |
 | ✅ `@ResourcePath`     | Completed |
 | ✅ `@Via`              | Completed |
-
-## Next Lesson
-
-We'll finish the remaining Sling Model annotations:
-
-* `@Named`
-* `@Default`
-* `@Optional`
-
-Then we'll move to the **OSGi annotations**, where I'll explain in depth:
-
-* `@Component`
-* `@Reference`
-* `@Activate`
-* `@Deactivate`
-* `@Modified`
-* `@Designate`
-* `@ObjectClassDefinition`
-* `@AttributeDefinition`
-
-These OSGi annotations are among the **most frequently asked AEM interview topics** and are essential for building enterprise AEM backend services.
-Excellent! Now we'll complete the remaining Sling Model annotations: **`@Named`**, **`@Default`**, and **`@Optional`**. These are commonly used together with `@ValueMapValue`. They are also covered in your uploaded AEM notes. 
 
 ---
 
@@ -9226,38 +8990,6 @@ You have now learned all the major Sling Model annotations used in enterprise AE
 * ✅ `@Optional`
 
 ---
-
-# Next Major Topic: OSGi Annotations ⭐⭐⭐⭐⭐
-
-We'll now start the **OSGi annotation series**, covering each annotation in depth:
-
-1. `@Component`
-2. `@Reference`
-3. `@Activate`
-4. `@Deactivate`
-5. `@Modified`
-6. `@Designate`
-7. `@ObjectClassDefinition`
-8. `@AttributeDefinition`
-9. `@ServiceRanking`
-10. `@ServiceScope`
-
-For every annotation, I'll explain:
-
-* What it is.
-* Why it is used.
-* Internal lifecycle.
-* Complete working code.
-* Real enterprise project examples.
-* Best practices.
-* Common mistakes.
-* Interview questions.
-
-This section is essential for becoming an **AEM Backend Developer** and is one of the most frequently tested areas in experienced AEM interviews.
-Excellent! Now we'll begin the **OSGi Annotations** section. This is one of the **most important backend topics** in AEM. Every AEM backend developer must understand these annotations because they are used to create services, schedulers, workflows, event handlers, and servlets. These concepts are also covered in your uploaded AEM notes. 
-
----
-
 # Chapter 8: OSGi Annotations
 
 # Annotation 1: `@Component` ⭐⭐⭐⭐⭐
@@ -9880,26 +9612,6 @@ This demonstrates the full OSGi service lifecycle.
 
 ---
 
-## Next Lesson: `@Reference` ⭐⭐⭐⭐⭐
-
-In the next lesson, we'll cover:
-
-* What `@Reference` is.
-* Dependency Injection in OSGi.
-* Reference policies.
-* Cardinality.
-* Static vs Dynamic references.
-* Multiple implementations.
-* Real enterprise examples.
-* Complete working code.
-* Lifecycle.
-* Interview questions.
-
-`@Reference` is one of the **most frequently asked OSGi annotations** in AEM interviews and is essential for building modular backend services.
-Excellent! Now let's learn **`@Reference`**, one of the **most important OSGi annotations** in AEM. Every AEM backend developer uses `@Reference` to inject one OSGi service into another. This topic is also covered in your uploaded AEM notes. 
-
----
-
 # Annotation 2: `@Reference` ⭐⭐⭐⭐⭐
 
 ---
@@ -10440,27 +10152,6 @@ A strong answer is:
 This demonstrates a solid understanding of OSGi's service-oriented architecture.
 
 ---
-
-## Next Lesson: `@Activate` ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* What `@Activate` is.
-* Component lifecycle.
-* Reading OSGi configuration.
-* Constructor activation.
-* Initialization logic.
-* Real enterprise examples.
-* `@Activate` vs constructor.
-* Best practices.
-* Common mistakes.
-* Interview questions.
-
-`@Activate` is another essential annotation for AEM backend development because it is executed when an OSGi component becomes active and is commonly used to initialize services and read configuration values.
-Excellent! Now let's learn **`@Activate`**, one of the **most important OSGi lifecycle annotations** in AEM. Every backend developer should understand it because it is used to initialize services, read OSGi configurations, and prepare components when they start. This topic is also covered in your uploaded AEM notes. 
-
----
-
 # OSGi Annotation 3: `@Activate` ⭐⭐⭐⭐⭐
 
 ---
@@ -10947,24 +10638,6 @@ This answer demonstrates a clear understanding of the OSGi component lifecycle.
 
 ---
 
-## Next Lesson: `@Deactivate` ⭐⭐⭐⭐⭐
-
-In the next lesson, we'll cover:
-
-* What `@Deactivate` is.
-* Component shutdown lifecycle.
-* Releasing resources.
-* Closing connections.
-* Cleaning caches.
-* Real project examples.
-* Best practices.
-* Common mistakes.
-* Interview questions.
-
-`@Deactivate` is the counterpart to `@Activate` and is essential for proper resource cleanup in enterprise AEM applications.
-Excellent! You're making great progress. Now let's learn **`@Deactivate`**, the annotation that complements `@Activate`. It is used to **clean up resources when an OSGi component is stopped or deactivated**. This topic is also covered in your uploaded AEM notes. 
-
----
 
 # OSGi Annotation 4: `@Deactivate` ⭐⭐⭐⭐⭐
 
@@ -11446,23 +11119,7 @@ This demonstrates that you understand both startup and shutdown phases of OSGi s
 
 ---
 
-# Next Lesson: `@Modified` ⭐⭐⭐⭐⭐
 
-In the next lesson, we'll cover:
-
-* What `@Modified` is.
-* Handling runtime configuration changes.
-* Reloading configuration without restarting AEM.
-* Real enterprise examples.
-* Complete code examples.
-* Best practices.
-* Common mistakes.
-* Interview questions.
-
-`@Modified` is especially important for configurable OSGi services because it allows configuration changes to take effect immediately without requiring a bundle restart.
-Excellent! Now let's learn **`@Modified`**, one of the most useful **OSGi lifecycle annotations** for configurable services. It allows an OSGi component to react to **configuration changes without restarting AEM**. This topic is also covered in your uploaded AEM notes. 
-
----
 
 # OSGi Annotation 5: `@Modified` ⭐⭐⭐⭐⭐
 
@@ -12091,24 +11748,6 @@ This ensures that configuration changes are applied immediately at runtime.
 * ✅ `@Deactivate`
 * ✅ `@Modified`
 
----
-
-# Next Lesson: `@ObjectClassDefinition` ⭐⭐⭐⭐⭐
-
-This is one of the **most important configuration annotations** in AEM. We'll cover:
-
-* What `@ObjectClassDefinition` is.
-* Creating OSGi configuration screens.
-* Configuration metadata.
-* Relationship with `@Designate`.
-* `@AttributeDefinition`.
-* Complete working examples.
-* Real enterprise projects.
-* Best practices.
-* Interview questions.
-
-After that, we'll cover `@Designate` and `@AttributeDefinition` to complete the OSGi configuration framework.
-Excellent! Now let's learn **`@ObjectClassDefinition`**, one of the **most important OSGi Configuration annotations** in AEM. If you want your service to have a configuration screen in AEM (`/system/console/configMgr`), this annotation is essential. It is also covered in your uploaded AEM notes. 
 
 ---
 
@@ -12698,26 +12337,6 @@ This is the standard pattern used in enterprise AEM projects.
 
 ---
 
-# Next Lesson: `@AttributeDefinition` ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* What `@AttributeDefinition` is.
-* Field names.
-* Descriptions.
-* Default values.
-* Required vs optional fields.
-* Password fields.
-* Dropdowns.
-* Validation.
-* Complete working examples.
-* Enterprise configuration screens.
-* Interview questions.
-
-`@AttributeDefinition` is the annotation that defines each configuration property inside an `@ObjectClassDefinition` interface, and it's used in almost every configurable OSGi service in AEM.
-Excellent! Now let's learn **`@AttributeDefinition`**, one of the **most important OSGi Configuration annotations**. It is used **inside `@ObjectClassDefinition`** to define each configuration field that appears in the AEM OSGi Configuration Manager. This topic is also covered in your uploaded AEM notes. 
-
----
 
 # OSGi Annotation 7: `@AttributeDefinition` ⭐⭐⭐⭐⭐
 
@@ -13284,23 +12903,6 @@ This is the standard enterprise AEM approach.
 * ✅ `@ObjectClassDefinition`
 * ✅ `@AttributeDefinition`
 
----
-
-# Next Lesson: `@Designate` ⭐⭐⭐⭐⭐
-
-This is the final piece of the OSGi configuration puzzle. We'll cover:
-
-* What `@Designate` is.
-* How it links a service to a configuration interface.
-* Factory configurations.
-* Multiple service instances.
-* Real enterprise examples.
-* Complete working code.
-* Best practices.
-* Interview questions.
-
-After `@Designate`, you'll have a complete understanding of the AEM OSGi configuration framework used in enterprise projects.
-Excellent! Now let's learn **`@Designate`**, the annotation that **connects an OSGi service with its configuration interface**. Without `@Designate`, an `@ObjectClassDefinition` exists, but your service will not automatically use that configuration. This topic is also covered in your uploaded AEM notes. 
 
 ---
 
@@ -13914,24 +13516,8 @@ You have now learned:
 
 These are the core OSGi annotations used in almost every enterprise AEM backend project.
 
-### Next Major Topic
 
-We'll move on to **AEM Servlets**, covering:
 
-1. `@Component` for Servlets
-2. `@SlingServletResourceTypes`
-3. `@SlingServletPaths`
-4. GET and POST requests
-5. Selectors
-6. Extensions
-7. Resource Types
-8. Request Parameters
-9. JSON responses
-10. Complete CRUD examples
-11. Interview questions
-
-Servlets are another major topic in AEM interviews and are used extensively for custom backend APIs and AJAX integrations.
-Excellent! Now we'll begin **AEM Servlets**, one of the **most important backend topics** in AEM. Every AEM Backend Developer must know Servlets because they are used to build APIs, process forms, return JSON, integrate with frontend frameworks (React/Angular), and communicate with external systems. This topic is also covered in your uploaded AEM notes. 
 
 ---
 
@@ -14426,26 +14012,6 @@ Browser
 
 This demonstrates a solid understanding of AEM's layered architecture.
 
----
-
-# Next Lesson: `@SlingServletResourceTypes` ⭐⭐⭐⭐⭐
-
-In the next lesson, we'll cover:
-
-* What `@SlingServletResourceTypes` is.
-* Why Adobe recommends Resource Type Servlets.
-* `resourceTypes`
-* `selectors`
-* `extensions`
-* `methods`
-* Complete working examples.
-* JSON responses.
-* Real enterprise examples.
-* Best practices.
-* Interview questions.
-
-This is one of the **most frequently used Servlet annotations** in modern AEM development and is a common interview topic.
-Excellent! Now let's learn **`@SlingServletResourceTypes`**, one of the **most important servlet annotations** in modern AEM. Adobe recommends using **Resource Type Servlets** instead of Path-based Servlets because they integrate naturally with Sling's resource resolution. This topic is also covered in your uploaded AEM notes. 
 
 ---
 
@@ -15021,23 +14587,6 @@ A strong answer is:
 
 This is the answer interviewers typically expect from an experienced AEM developer.
 
----
-
-## Next Lesson: `@SlingServletPaths`
-
-We'll cover:
-
-* What `@SlingServletPaths` is.
-* `/bin` servlets.
-* When to use path-based servlets.
-* GET and POST examples.
-* Security considerations.
-* Real enterprise use cases.
-* Best practices.
-* Interview questions.
-
-After that, we'll dive deeper into **Selectors**, **Extensions**, **Request Parameters**, **JSON responses**, and **Servlet CRUD operations** with complete end-to-end examples.
-Excellent! Now let's learn **`@SlingServletPaths`**, which is used to create **Path-Based Servlets** in AEM. Although **Adobe recommends `@SlingServletResourceTypes` for most new development**, path-based servlets are still widely used for utility endpoints, integrations, and legacy projects. This topic is also covered in your uploaded AEM notes. 
 
 ---
 
@@ -15671,25 +15220,6 @@ This shows you understand the strengths of both approaches.
 * ✅ `SlingAllMethodsServlet`
 * ✅ `@SlingServletResourceTypes`
 * ✅ `@SlingServletPaths`
-
----
-
-# Next Lesson: **Selectors & Extensions** ⭐⭐⭐⭐⭐
-
-This is another very important AEM interview topic. We'll cover:
-
-* What selectors are.
-* What extensions are.
-* Multiple selectors.
-* URL parsing.
-* Resource resolution.
-* Real enterprise examples.
-* JSON APIs.
-* Best practices.
-* Interview questions.
-
-Understanding selectors is essential because they are used extensively in AEM to build clean, resource-oriented URLs and APIs.
-Excellent! Now let's learn **Selectors and Extensions**, one of the **most important concepts in AEM URL resolution**. Almost every experienced AEM developer is expected to understand how Sling parses URLs. This topic is also covered in your uploaded AEM notes. 
 
 ---
 
@@ -16392,25 +15922,6 @@ This clearly demonstrates that you understand Sling URL decomposition and servle
 * ✅ Extensions
 * ✅ `RequestPathInfo`
 
----
-
-# Next Lesson: **Request Parameters & JSON Responses** ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* `request.getParameter()`
-* `request.getParameterMap()`
-* Path parameters
-* Query parameters
-* Sending JSON responses using `JSONObject` and `Gson`
-* HTTP status codes
-* Error handling
-* Complete REST API examples
-* CRUD operations
-* Interview questions
-
-This is one of the most practical topics because almost every AEM servlet reads request parameters and returns JSON to frontend applications.
-Excellent! Now let's learn **Request Parameters & JSON Responses**, one of the **most practical topics** in AEM Servlet development. Almost every servlet reads request parameters and returns JSON. This topic is also covered in your uploaded AEM notes. 
 
 ---
 
@@ -17129,25 +16640,7 @@ This is the architecture used in most enterprise AEM projects.
 * ✅ JSON Responses
 * ✅ HTTP Status Codes
 
-## Next Lesson: **Complete CRUD Operations in AEM Servlets**
-
-We'll build a full enterprise example covering:
-
-* **GET** – Fetch a product
-* **POST** – Create a product
-* **PUT** – Update a product
-* **DELETE** – Delete a product
-* Integration with an OSGi service
-* JSON request/response handling
-* Error handling
-* End-to-end architecture
-* Interview questions
-
-This is one of the most practical AEM backend exercises and closely resembles real-world enterprise projects.
-Excellent! Now we'll build a **Complete CRUD (Create, Read, Update, Delete) REST API** in AEM using Servlets and OSGi Services. This is one of the **most important real-world AEM backend topics** and is commonly asked in interviews. It is also covered in your uploaded AEM notes. 
-
 ---
-
 # Chapter 9 - Complete CRUD Operations in AEM ⭐⭐⭐⭐⭐
 
 ---
@@ -17763,25 +17256,7 @@ By now you've covered:
 
 ---
 
-## Next Major Topic: AEM Filters ⭐⭐⭐⭐⭐
 
-We'll begin learning:
-
-* `javax.servlet.Filter`
-* `SlingFilter`
-* `@Component` registration
-* Filter scopes (REQUEST, INCLUDE, FORWARD, ERROR)
-* Filter ranking
-* Authentication filters
-* Logging filters
-* Response modification
-* Real enterprise examples
-* Interview questions
-
-Filters are another important backend topic because they allow you to intercept requests and responses before they reach Servlets or HTL components.
-Excellent! Now let's learn **AEM Filters**, one of the **most important backend concepts** in AEM. Filters are widely used in enterprise projects for logging, authentication, authorization, request modification, response modification, and security. This topic is also covered in your uploaded AEM notes. 
-
----
 
 # Chapter 10: AEM Filters ⭐⭐⭐⭐⭐
 
@@ -18363,24 +17838,7 @@ Filters are ideal for **cross-cutting concerns** such as security, logging, and 
 
 ---
 
-# Next Lesson: **AEM Scheduler (OSGi Scheduler)** ⭐⭐⭐⭐⭐
 
-We'll cover:
-
-* What an AEM Scheduler is.
-* Creating scheduled jobs.
-* Cron expressions.
-* `Runnable` interface.
-* `Scheduler` service.
-* OSGi configuration.
-* Real enterprise examples.
-* Best practices.
-* Interview questions.
-
-The AEM Scheduler is another frequently asked interview topic because it is widely used for background jobs such as cache cleanup, report generation, data synchronization, and scheduled API calls.
-Excellent! Now let's learn **AEM Scheduler (OSGi Scheduler)**, one of the **most frequently used backend features** in enterprise AEM projects. Schedulers are used to execute tasks automatically at a specific time or interval without any user request. This topic is also covered in your uploaded AEM notes. 
-
----
 
 # Chapter 11: AEM Scheduler ⭐⭐⭐⭐⭐
 
@@ -18984,25 +18442,6 @@ You have now learned:
 * ✅ CRUD APIs
 * ✅ Filters
 * ✅ AEM Scheduler
-
----
-
-# Next Major Topic: AEM Workflow ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* What an AEM Workflow is.
-* Workflow Models.
-* Workflow Launcher.
-* Workflow Process Step.
-* `WorkflowProcess` interface.
-* `WorkItem`, `WorkflowSession`, and `MetaDataMap`.
-* Custom Workflow Process implementation.
-* Complete enterprise examples.
-* Interview questions.
-
-**AEM Workflows** are one of the most important enterprise features, especially for **DAM asset processing, content approval, publishing, notifications, and business automation**, and they are frequently discussed in AEM backend interviews.
-Excellent! Now we'll start one of the **most important AEM enterprise topics**—**AEM Workflows**. Workflows are used in almost every large AEM implementation for content approval, DAM asset processing, publishing, notifications, and automation. This topic is also covered in your uploaded AEM notes. 
 
 ---
 
@@ -19666,29 +19105,6 @@ Workflow Complete
 
 This shows that you understand both the AEM workflow engine and how custom Java code fits into the process.
 
----
-
-# Next Lesson: **Custom Workflow Process (`WorkflowProcess`)** ⭐⭐⭐⭐⭐
-
-We'll build a complete enterprise workflow process with:
-
-* `@Component`
-* `WorkflowProcess`
-* `execute()`
-* `WorkItem`
-* `WorkflowData`
-* `Payload`
-* `ResourceResolver`
-* `Session`
-* `MetaDataMap`
-* Reading process arguments
-* Updating JCR content
-* Complete working code
-* Enterprise examples
-* Interview questions
-
-This is one of the **most frequently asked coding topics** in AEM backend interviews because almost every enterprise project includes custom workflow process steps.
-Excellent! Now let's learn **Custom Workflow Process (`WorkflowProcess`)**, one of the **most important coding topics** in AEM. This is asked very frequently in AEM Backend Developer interviews because almost every enterprise project contains custom workflow steps. It is also covered in your uploaded AEM notes. 
 
 ---
 
@@ -20358,24 +19774,7 @@ A strong answer is:
 
 This is the workflow process pattern used in enterprise AEM projects.
 
----
-
-# Next Lesson: Workflow Launcher ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* What a Workflow Launcher is.
-* Automatic workflow triggering.
-* Path-based launchers.
-* Node type filtering.
-* Event types (Created, Modified, Deleted).
-* Conditions and exclusions.
-* Real enterprise examples.
-* Best practices.
-* Interview questions.
-
-**Workflow Launchers** are critical because they allow AEM to start workflows automatically whenever content or assets are created, modified, or deleted—without requiring a user to manually start the workflow.
-Excellent! Now let's learn **Workflow Launcher**, one of the **most important automation features** in AEM. In enterprise projects, developers rarely start workflows manually. Instead, **Workflow Launchers automatically trigger workflows** when content or assets are created, modified, or deleted. This topic is also covered in your uploaded AEM notes. 
+ 
 
 ---
 
@@ -21038,27 +20437,7 @@ You have now learned:
 * ✅ Custom Workflow Process
 * ✅ Workflow Launcher
 
----
 
-# Next Major Topic: JCR (Java Content Repository) ⭐⭐⭐⭐⭐
-
-This is one of the **core foundations of AEM**. We'll cover:
-
-* What JCR is.
-* Repository structure.
-* Nodes and Properties.
-* Primary Types and Mixins.
-* Sessions.
-* Resource vs Node.
-* `ResourceResolver`.
-* CRUD operations on JCR.
-* Queries (QueryBuilder & JCR-SQL2).
-* Best practices.
-* Complete code examples.
-* Interview questions.
-
-**JCR is one of the most important AEM interview topics**, because almost every backend feature—pages, assets, workflows, Sling Models, and services—ultimately reads from or writes to the JCR repository.
-Excellent! Now we'll start **JCR (Java Content Repository)**, which is the **heart of AEM**. Every page, asset, component, tag, workflow, and configuration in AEM is stored in the JCR. This topic is also covered in your uploaded AEM notes. 
 
 ---
 
@@ -21659,23 +21038,6 @@ A strong answer is:
 This answer demonstrates both conceptual understanding and practical knowledge.
 
 ---
-
-# Next Lesson: **Resource vs Node vs ResourceResolver** ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* What is a `Resource`?
-* What is a `Node`?
-* What is a `ResourceResolver`?
-* Differences between them.
-* Adaptation (`resource.adaptTo(Node.class)`).
-* CRUD operations.
-* Complete code examples.
-* Enterprise use cases.
-* Interview questions.
-
-This is one of the **most frequently asked AEM interview topics**, because almost every backend feature interacts with these three core APIs.
-Excellent! Now we'll learn one of the **most important AEM interview topics**:
 
 # Chapter 13: Resource vs Node vs ResourceResolver ⭐⭐⭐⭐⭐
 
@@ -22348,25 +21710,6 @@ This answer demonstrates both practical AEM knowledge and an understanding of th
 
 ---
 
-# Next Lesson: **ValueMap, ModifiableValueMap & CRUD Operations in JCR** ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* `ValueMap`
-* `ModifiableValueMap`
-* Reading properties
-* Creating nodes
-* Updating properties
-* Deleting nodes
-* `resolver.commit()`
-* Complete CRUD examples
-* Real enterprise use cases
-* Best practices
-* Interview questions
-
-This is one of the most practical JCR topics because almost every AEM backend developer reads and updates repository content using these APIs.
-Excellent! Now let's learn one of the **most practical JCR topics** in AEM.
-
 # Chapter 13: ValueMap, ModifiableValueMap & JCR CRUD Operations ⭐⭐⭐⭐⭐
 
 This topic is used **every day** by AEM backend developers because almost every project needs to **read, create, update, and delete content** from the JCR repository. It is also covered in your uploaded AEM notes. 
@@ -22982,27 +22325,6 @@ This is the standard approach used in enterprise AEM applications.
 
 ---
 
-# Next Lesson: **QueryBuilder API & JCR-SQL2** ⭐⭐⭐⭐⭐
-
-This is one of the **most important advanced AEM topics**. We'll cover:
-
-* What QueryBuilder is.
-* QueryBuilder predicates.
-* Searching pages and assets.
-* Full-text search.
-* Path queries.
-* Property queries.
-* Pagination.
-* JCR-SQL2 queries.
-* Complete working code.
-* Performance best practices.
-* Interview questions.
-
-**Every experienced AEM backend developer should know how to search the JCR efficiently**, and QueryBuilder is one of the primary APIs used for that purpose.
-Excellent! Now let's learn **QueryBuilder API & JCR-SQL2**, one of the **most important advanced AEM topics**. Almost every enterprise AEM project needs to search pages, assets, or components, and QueryBuilder is the preferred API for most AEM development. This topic is also covered in your uploaded AEM notes. 
-
----
-
 # Chapter 13: QueryBuilder API & JCR-SQL2 ⭐⭐⭐⭐⭐
 
 ---
@@ -23590,25 +22912,7 @@ This demonstrates both correctness and performance awareness, which interviewers
 
 ---
 
-# Next Major Topic: AEM Event Handling (OSGi Events & Sling Jobs) ⭐⭐⭐⭐⭐
 
-We'll cover:
-
-* OSGi EventAdmin
-* EventHandler
-* Sling Jobs
-* JobConsumer
-* Asynchronous processing
-* Event-driven architecture
-* Real enterprise examples
-* Complete code
-* Best practices
-* Interview questions
-
-These topics are important for building scalable, event-driven AEM applications where actions such as content changes or workflow completions trigger background processing.
-Excellent! Now let's learn **AEM Event Handling (OSGi Events & Sling Jobs)**, one of the **most advanced backend topics** in AEM. Enterprise applications use event-driven architecture to decouple components and execute tasks asynchronously. This topic is also covered in your uploaded AEM notes. 
-
----
 
 # Chapter 14 - AEM Event Handling ⭐⭐⭐⭐⭐
 
@@ -24337,26 +23641,6 @@ You have now covered:
 * ✅ Event Handling
 * ✅ Sling Jobs
 
-## Next Major Topic: **AEM Dispatcher** ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* What Dispatcher is.
-* Dispatcher architecture.
-* Caching.
-* Load balancing.
-* Cache invalidation (Flush).
-* `dispatcher.any` configuration.
-* Filter rules.
-* Rewrite rules.
-* Security.
-* Real enterprise architecture.
-* Interview questions.
-
-**Dispatcher is one of the most important AEM architecture topics** and is almost always discussed in interviews for AEM developers with 2+ years of experience.
-Excellent! Now we'll learn **AEM Dispatcher**, one of the **most important AEM architecture topics**. If you're preparing for **2–8 years of AEM experience interviews**, you must understand Dispatcher thoroughly. This topic is also covered in your uploaded AEM notes. 
-
----
 
 # Chapter 15: AEM Dispatcher ⭐⭐⭐⭐⭐
 
@@ -25088,26 +24372,6 @@ You have now covered:
 
 ---
 
-# Next Major Topic: AEM MSM (Multi Site Manager) ⭐⭐⭐⭐⭐
-
-In the next chapter, we'll learn:
-
-* What MSM is.
-* Live Copies.
-* Blueprints.
-* Rollout Configurations.
-* Synchronization.
-* Language Copies.
-* Inheritance.
-* Enterprise examples.
-* Complete diagrams.
-* Interview questions.
-
-**MSM is heavily used by multinational companies** to manage multiple country and language websites while sharing common content efficiently.
-Excellent! Now let's learn **AEM MSM (Multi Site Manager)**, one of the **most important enterprise AEM features**. MSM is widely used by multinational companies to manage multiple websites, countries, and languages from a single source. This topic is also covered in your uploaded AEM notes. 
-
----
-
 # Chapter 16: AEM MSM (Multi Site Manager) ⭐⭐⭐⭐⭐
 
 ---
@@ -25721,24 +24985,6 @@ You have now learned:
 * ✅ MSM (Multi Site Manager)
 
 ---
-
-# Next Major Topic: AEM Content Fragments & Experience Fragments ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* What Content Fragments are.
-* What Experience Fragments are.
-* Differences between them.
-* Headless CMS use cases.
-* GraphQL integration.
-* Content Fragment Models.
-* Experience Fragment variations.
-* Complete Java APIs.
-* Enterprise examples.
-* Interview questions.
-
-**Content Fragments and Experience Fragments are among the most frequently asked topics in modern AEM interviews**, especially for projects using headless architecture or Adobe Experience Manager as a content platform.
-Excellent! Now we'll learn one of the **most important modern AEM topics**:
 
 # Chapter 17: Content Fragments (CF) & Experience Fragments (XF) ⭐⭐⭐⭐⭐
 
@@ -26460,24 +25706,8 @@ You have now covered almost all major AEM backend topics:
 * ✅ Content Fragments
 * ✅ Experience Fragments
 
-## Next Major Topic: **AEM GraphQL (Headless CMS)** ⭐⭐⭐⭐⭐
 
-We'll cover:
 
-* What GraphQL is.
-* GraphQL vs REST.
-* Creating GraphQL endpoints.
-* Querying Content Fragments.
-* Filtering and pagination.
-* Nested models.
-* Java integration.
-* React integration.
-* Performance best practices.
-* Complete enterprise examples.
-* Interview questions.
-
-**GraphQL is one of the hottest AEM skills today**, especially for AEM as a Cloud Service and headless implementations, and it is frequently asked in modern AEM interviews.
-Excellent! Now let's learn **AEM GraphQL**, one of the **most in-demand skills** in modern AEM, especially for **AEM as a Cloud Service (AEMaaCS)** and **Headless CMS** projects. GraphQL is widely used with **Content Fragments** to deliver content to React, Angular, mobile apps, and other frontends. This topic is also covered in your uploaded AEM notes. 
 
 ---
 
@@ -27148,23 +26378,6 @@ You have now covered:
 * ✅ Experience Fragments
 * ✅ GraphQL
 
-## Next Major Topic: **AEM Security (Authentication, Authorization, Service Users & ResourceResolverFactory)** ⭐⭐⭐⭐⭐
-
-This is one of the **most important enterprise AEM topics**. We'll cover:
-
-* Authentication vs Authorization
-* Service Users
-* `ResourceResolverFactory`
-* Service ResourceResolver
-* Subservice Mapping
-* Access Control Lists (ACLs)
-* Secure repository access
-* Common security pitfalls
-* Complete code examples
-* Interview questions
-
-These concepts are essential because **using administrative sessions is no longer recommended**, and secure service-user-based access is the standard approach in modern AEM development.
-Excellent! Now let's learn one of the **most important enterprise AEM topics**.
 
 # Chapter 19: AEM Security (Authentication, Authorization, Service Users & ResourceResolverFactory) ⭐⭐⭐⭐⭐
 
@@ -27875,23 +27088,6 @@ You have now completed:
 * ✅ GraphQL
 * ✅ AEM Security
 
-## Next Major Topic: **AEM Unit Testing (JUnit 5, Mockito & AEM Mocks)** ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* JUnit 5
-* Mockito
-* AEM Mocks (`io.wcm.testing.aem-mock`)
-* Testing Sling Models
-* Testing OSGi Services
-* Testing Servlets
-* Mocking `ResourceResolver`
-* Mocking `PageManager`
-* Complete enterprise test cases
-* Interview questions
-
-This is an essential topic because **most enterprise AEM projects require unit tests**, and many interviews include questions about testing custom Sling Models, Services, and Servlets.
-Excellent! Now let's learn **AEM Unit Testing (JUnit 5, Mockito & AEM Mocks)**. This is one of the **most important enterprise AEM topics** because most companies require unit tests before code can be merged. This topic is also covered in your uploaded AEM notes. 
 
 ---
 
@@ -28997,29 +28193,6 @@ A strong answer is:
 
 ---
 
-# Next Advanced Chapter: Adobe Core Components ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* What Core Components are.
-* Architecture.
-* Proxy Components.
-* Extending Core Components.
-* Sling Resource Super Type.
-* Editable Templates integration.
-* Policies.
-* Customizations.
-* Real enterprise examples.
-* Interview questions.
-
-**Core Components are used in almost every modern AEM project**, making them an essential topic for both development and interviews.
-Excellent! Now we'll learn **Adobe Core Components**, one of the **most important topics in modern AEM (AEM 6.5 & AEM as a Cloud Service)**.
-
-Almost every enterprise AEM project uses **Core Components** instead of creating components from scratch.
-
-This topic is also covered in your uploaded AEM notes. 
-
----
 
 # Chapter 22: Adobe Core Components ⭐⭐⭐⭐⭐
 
@@ -29587,25 +28760,8 @@ This is the **Adobe-recommended approach** and is used in almost every modern AE
 
 ---
 
-# Next Advanced Topic: Editable Templates ⭐⭐⭐⭐⭐
 
-In the next chapter, we'll cover:
 
-* Static vs Editable Templates
-* Template Types
-* Template Editor
-* Policies
-* Initial Content
-* Structure
-* Layout Container
-* Allowed Components
-* Responsive Grid
-* Real enterprise examples
-* Complete project setup
-* Interview questions
-
-**Editable Templates are one of the most frequently used authoring features in modern AEM** and are essential for AEM 6.5 and AEM as a Cloud Service development.
-Excellent! Now let's learn one of the **most important authoring topics in AEM**.
 
 # Chapter 23: Editable Templates ⭐⭐⭐⭐⭐
 
@@ -30306,27 +29462,6 @@ Then explain:
 * Authors create pages from the template without developers needing to change code.
 
 This explanation demonstrates a practical understanding of how modern AEM projects are built.
-
----
-
-# 🎉 Next Chapter: AEM as a Cloud Service (AEMaaCS) ⭐⭐⭐⭐⭐
-
-In the next lesson, we'll cover:
-
-* AEM as a Cloud Service Architecture
-* Cloud Manager
-* CI/CD Pipelines
-* Immutable vs Mutable Repository
-* Dispatcher in Cloud
-* Git-based Deployments
-* Autoscaling
-* Developer Workflow
-* Best Practices
-* Complete Enterprise Architecture
-* Interview Questions
-
-This is one of the **highest-priority topics** for current AEM interviews because many organizations are migrating from AEM 6.5 to **AEM as a Cloud Service**.
-Excellent! Now let's learn **AEM as a Cloud Service (AEMaaCS)**, one of the **most important modern AEM topics**. Almost every new Adobe implementation today uses **AEMaaCS**, and this topic is very common in interviews for developers with **2+ years of experience**. This topic is also covered in your uploaded AEM notes. 
 
 ---
 
@@ -31055,23 +30190,6 @@ You have now completed:
 * ✅ Editable Templates
 * ✅ AEM as a Cloud Service
 
-## Final Advanced Topics (Recommended)
-
-To reach a **Senior AEM Developer** level, the next subjects to master are:
-
-1. **OSGi Configuration Deep Dive** (Configuration Admin, Factory Configurations, Metatype annotations)
-2. **Apache Sling Internals** (Resource Resolution, Script Resolution, Request Processing)
-3. **Oak Indexing & Performance Tuning**
-4. **Dispatcher Advanced Configuration**
-5. **Adobe IMS Authentication**
-6. **AEM Performance Optimization**
-7. **Real Enterprise Project Architecture**
-8. **Complete End-to-End E-commerce AEM Project**
-9. **Top 500 AEM Interview Questions with Answers**
-10. **Advanced Debugging & Production Troubleshooting**
-
-These are the topics that distinguish a **Senior AEM Developer** from someone who only knows the APIs.
-Excellent! You're making great progress. Now let's move to one of the **most advanced and interview-critical AEM topics**.
 
 # Chapter 25: OSGi Configuration Deep Dive ⭐⭐⭐⭐⭐
 
@@ -31681,26 +30799,8 @@ This is the standard enterprise approach.
 
 ---
 
-# Next Advanced Topic: Apache Sling Internals ⭐⭐⭐⭐⭐
 
-We'll cover:
 
-* Sling Request Processing
-* Resource Resolution
-* URL Mapping
-* Script Resolution
-* Servlet Resolution
-* Resource Types
-* `sling:resourceType`
-* `sling:resourceSuperType`
-* HTL Rendering Flow
-* Complete request lifecycle
-* Enterprise interview questions
-
-This is one of the deepest AEM topics and is especially valuable for senior developer interviews because it explains **how AEM actually processes every request internally**.
-Excellent! Now let's learn **Apache Sling Internals**, one of the **deepest and most important AEM concepts**. Senior AEM developers are expected to understand **how AEM processes every HTTP request internally**.
-
----
 
 # Chapter 26: Apache Sling Internals ⭐⭐⭐⭐⭐
 
@@ -32417,24 +31517,6 @@ This is one of the strongest answers you can give in an AEM interview because it
 
 ---
 
-# Next Advanced Topic: Oak Indexing & Performance Tuning ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* What Oak Indexes are.
-* Why indexes are important.
-* Lucene indexes.
-* Property indexes.
-* Query performance.
-* Explain Query tool.
-* Slow query optimization.
-* Index definitions.
-* Real production examples.
-* Interview questions.
-
-This is a **senior-level AEM topic** that is frequently discussed in performance tuning and production support interviews.
-Excellent! Now let's learn one of the **most advanced AEM topics**.
-
 # Chapter 27: Oak Indexing & Performance Tuning ⭐⭐⭐⭐⭐
 
 This topic is **very important for Senior AEM Developers (4–10 years)** because slow queries and indexing issues are common in production systems.
@@ -33099,26 +32181,7 @@ You have now completed:
 * ✅ Editable Templates
 * ✅ AEM as a Cloud Service
 
-## Next Advanced Topic: **Real Enterprise AEM Project (End-to-End)** ⭐⭐⭐⭐⭐
 
-In this chapter, we'll build a complete enterprise application from scratch, including:
-
-* Project architecture.
-* Maven module structure.
-* Editable Templates.
-* Core Components.
-* Sling Models.
-* OSGi Services.
-* Servlets.
-* Workflows.
-* Dispatcher.
-* GraphQL.
-* Cloud deployment.
-* Best practices.
-* Real interview scenarios.
-
-This chapter ties together everything you've learned into a production-ready AEM application, similar to what you would encounter in a real enterprise project.
-Excellent! Now we'll build a **Real Enterprise AEM Project** from scratch. This chapter brings together almost everything you've learned and shows how a real production AEM application is designed.
 
 ---
 
@@ -33858,6 +32921,3 @@ You have now completed a comprehensive AEM Backend learning path covering:
 * Sling Internals
 * Oak Performance
 * Enterprise Project Architecture
-
-At this point, you're well prepared to start building real AEM applications and to tackle many AEM backend interview topics. A great next step would be to build a complete end-to-end AEM project implementing these concepts together and practice explaining its architecture confidently in interviews.
-
