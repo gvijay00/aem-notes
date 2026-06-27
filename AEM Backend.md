@@ -8990,7 +8990,7 @@ You have now learned all the major Sling Model annotations used in enterprise AE
 * ✅ `@Optional`
 
 ---
-# Chapter 8: OSGi Annotations
+# Chapter 2: OSGi Annotations
 
 # Annotation 1: `@Component` ⭐⭐⭐⭐⭐
 
@@ -13521,7 +13521,7 @@ These are the core OSGi annotations used in almost every enterprise AEM backend 
 
 ---
 
-# Chapter 9: AEM Servlets
+# Chapter 3: AEM Servlets
 
 # What is a Servlet? ⭐⭐⭐⭐⭐
 
@@ -14015,7 +14015,7 @@ This demonstrates a solid understanding of AEM's layered architecture.
 
 ---
 
-# Chapter 9 - Servlet Annotation 1
+# Chapter 4 - Servlet Annotation 1
 
 # `@SlingServletResourceTypes` ⭐⭐⭐⭐⭐
 
@@ -14590,7 +14590,7 @@ This is the answer interviewers typically expect from an experienced AEM develop
 
 ---
 
-# Chapter 9 - Servlet Annotation 2
+# Chapter 5 - Servlet Annotation 2
 
 # `@SlingServletPaths` ⭐⭐⭐⭐⭐
 
@@ -15223,7 +15223,7 @@ This shows you understand the strengths of both approaches.
 
 ---
 
-# Chapter 9 - Selectors & Extensions ⭐⭐⭐⭐⭐
+# Chapter 6 - Selectors & Extensions ⭐⭐⭐⭐⭐
 
 ---
 
@@ -15925,7 +15925,7 @@ This clearly demonstrates that you understand Sling URL decomposition and servle
 
 ---
 
-# Chapter 9 - Request Parameters & JSON Responses ⭐⭐⭐⭐⭐
+# Chapter 7 - Request Parameters & JSON Responses ⭐⭐⭐⭐⭐
 
 ---
 
@@ -16641,7 +16641,7 @@ This is the architecture used in most enterprise AEM projects.
 * ✅ HTTP Status Codes
 
 ---
-# Chapter 9 - Complete CRUD Operations in AEM ⭐⭐⭐⭐⭐
+# Chapter 8 - Complete CRUD Operations in AEM ⭐⭐⭐⭐⭐
 
 ---
 
@@ -17258,7 +17258,7 @@ By now you've covered:
 
 
 
-# Chapter 10: AEM Filters ⭐⭐⭐⭐⭐
+# Chapter 9: AEM Filters ⭐⭐⭐⭐⭐
 
 # What is a Filter?
 
@@ -17840,7 +17840,7 @@ Filters are ideal for **cross-cutting concerns** such as security, logging, and 
 
 
 
-# Chapter 11: AEM Scheduler ⭐⭐⭐⭐⭐
+# Chapter 10: AEM Scheduler ⭐⭐⭐⭐⭐
 
 ---
 
@@ -18445,7 +18445,7 @@ You have now learned:
 
 ---
 
-# Chapter 12: AEM Workflow ⭐⭐⭐⭐⭐
+# Chapter 11: AEM Workflow ⭐⭐⭐⭐⭐
 
 # What is an AEM Workflow?
 
@@ -19778,7 +19778,7 @@ This is the workflow process pattern used in enterprise AEM projects.
 
 ---
 
-# Chapter 12 - Workflow Launcher ⭐⭐⭐⭐⭐
+# Chapter 13 - Workflow Launcher ⭐⭐⭐⭐⭐
 
 ---
 
@@ -20441,7 +20441,7 @@ You have now learned:
 
 ---
 
-# Chapter 13: JCR (Java Content Repository) ⭐⭐⭐⭐⭐
+# Chapter 14: JCR (Java Content Repository) ⭐⭐⭐⭐⭐
 
 ---
 
@@ -21039,7 +21039,7 @@ This answer demonstrates both conceptual understanding and practical knowledge.
 
 ---
 
-# Chapter 13: Resource vs Node vs ResourceResolver ⭐⭐⭐⭐⭐
+# Chapter 15: Resource vs Node vs ResourceResolver ⭐⭐⭐⭐⭐
 
 This is asked in almost every AEM Backend Developer interview because almost every AEM application uses these APIs. It is also covered in your uploaded AEM notes. 
 
@@ -21710,7 +21710,7 @@ This answer demonstrates both practical AEM knowledge and an understanding of th
 
 ---
 
-# Chapter 13: ValueMap, ModifiableValueMap & JCR CRUD Operations ⭐⭐⭐⭐⭐
+# Chapter 16: ValueMap, ModifiableValueMap & JCR CRUD Operations ⭐⭐⭐⭐⭐
 
 This topic is used **every day** by AEM backend developers because almost every project needs to **read, create, update, and delete content** from the JCR repository. It is also covered in your uploaded AEM notes. 
 
@@ -22325,7 +22325,7 @@ This is the standard approach used in enterprise AEM applications.
 
 ---
 
-# Chapter 13: QueryBuilder API & JCR-SQL2 ⭐⭐⭐⭐⭐
+# Chapter 17: QueryBuilder API & JCR-SQL2 ⭐⭐⭐⭐⭐
 
 ---
 
@@ -22914,7 +22914,7 @@ This demonstrates both correctness and performance awareness, which interviewers
 
 
 
-# Chapter 14 - AEM Event Handling ⭐⭐⭐⭐⭐
+# Chapter 18 - AEM Event Handling ⭐⭐⭐⭐⭐
 
 ---
 
@@ -23642,7 +23642,7 @@ You have now covered:
 * ✅ Sling Jobs
 
 
-# Chapter 15: AEM Dispatcher ⭐⭐⭐⭐⭐
+# Chapter 19: AEM Dispatcher ⭐⭐⭐⭐⭐
 
 ---
 
@@ -24372,7 +24372,7 @@ You have now covered:
 
 ---
 
-# Chapter 16: AEM MSM (Multi Site Manager) ⭐⭐⭐⭐⭐
+# Chapter 20: AEM MSM (Multi Site Manager) ⭐⭐⭐⭐⭐
 
 ---
 
@@ -24986,7 +24986,7 @@ You have now learned:
 
 ---
 
-# Chapter 17: Content Fragments (CF) & Experience Fragments (XF) ⭐⭐⭐⭐⭐
+# Chapter 21: Content Fragments (CF) & Experience Fragments (XF) ⭐⭐⭐⭐⭐
 
 This topic is **very important for AEM 6.5 and AEM as a Cloud Service**, especially in **Headless CMS**, **GraphQL**, and **SPA (React/Angular)** projects. It is also covered in your uploaded AEM notes. 
 
@@ -25711,7 +25711,7 @@ You have now covered almost all major AEM backend topics:
 
 ---
 
-# Chapter 18: AEM GraphQL ⭐⭐⭐⭐⭐
+# Chapter 22: AEM GraphQL ⭐⭐⭐⭐⭐
 
 ---
 
@@ -26379,7 +26379,7 @@ You have now covered:
 * ✅ GraphQL
 
 
-# Chapter 19: AEM Security (Authentication, Authorization, Service Users & ResourceResolverFactory) ⭐⭐⭐⭐⭐
+# Chapter 23: AEM Security (Authentication, Authorization, Service Users & ResourceResolverFactory) ⭐⭐⭐⭐⭐
 
 This topic is asked in almost every **AEM Backend Developer interview (2–10 years)** because secure repository access is critical. It is also covered in your uploaded AEM notes. 
 
@@ -27091,7 +27091,7 @@ You have now completed:
 
 ---
 
-# Chapter 20: AEM Unit Testing ⭐⭐⭐⭐⭐
+# Chapter 24: AEM Unit Testing ⭐⭐⭐⭐⭐
 
 ---
 
@@ -27694,7 +27694,7 @@ Excellent! Now we'll move to **Advanced AEM Design Patterns**, which is one of t
 
 ---
 
-# Chapter 21: AEM Design Patterns ⭐⭐⭐⭐⭐
+# Chapter 25: AEM Design Patterns ⭐⭐⭐⭐⭐
 
 ---
 
@@ -28194,7 +28194,7 @@ A strong answer is:
 ---
 
 
-# Chapter 22: Adobe Core Components ⭐⭐⭐⭐⭐
+# Chapter 26: Adobe Core Components ⭐⭐⭐⭐⭐
 
 ---
 
@@ -28763,7 +28763,7 @@ This is the **Adobe-recommended approach** and is used in almost every modern AE
 
 
 
-# Chapter 23: Editable Templates ⭐⭐⭐⭐⭐
+# Chapter 27: Editable Templates ⭐⭐⭐⭐⭐
 
 **Editable Templates** are the standard way to create pages in **AEM 6.5** and **AEM as a Cloud Service**. Almost every modern AEM project uses them. This topic is also covered in your uploaded AEM notes. 
 
@@ -29465,7 +29465,7 @@ This explanation demonstrates a practical understanding of how modern AEM projec
 
 ---
 
-# Chapter 24: AEM as a Cloud Service (AEMaaCS) ⭐⭐⭐⭐⭐
+# Chapter 28: AEM as a Cloud Service (AEMaaCS) ⭐⭐⭐⭐⭐
 
 ---
 
@@ -30191,7 +30191,7 @@ You have now completed:
 * ✅ AEM as a Cloud Service
 
 
-# Chapter 25: OSGi Configuration Deep Dive ⭐⭐⭐⭐⭐
+# Chapter 29: OSGi Configuration Deep Dive ⭐⭐⭐⭐⭐
 
 This topic is asked in almost every **3–10 years AEM interview** because every enterprise application uses OSGi configurations for environment-specific settings.
 
@@ -30802,7 +30802,7 @@ This is the standard enterprise approach.
 
 
 
-# Chapter 26: Apache Sling Internals ⭐⭐⭐⭐⭐
+# Chapter 30: Apache Sling Internals ⭐⭐⭐⭐⭐
 
 ---
 
@@ -31517,7 +31517,7 @@ This is one of the strongest answers you can give in an AEM interview because it
 
 ---
 
-# Chapter 27: Oak Indexing & Performance Tuning ⭐⭐⭐⭐⭐
+# Chapter 31: Oak Indexing & Performance Tuning ⭐⭐⭐⭐⭐
 
 This topic is **very important for Senior AEM Developers (4–10 years)** because slow queries and indexing issues are common in production systems.
 
@@ -32185,7 +32185,7 @@ You have now completed:
 
 ---
 
-# Chapter 28: Real Enterprise AEM Project (E-Commerce Website) ⭐⭐⭐⭐⭐
+# Chapter 32: Real Enterprise AEM Project (E-Commerce Website) ⭐⭐⭐⭐⭐
 
 ## Project Scenario
 
