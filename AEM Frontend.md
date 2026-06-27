@@ -1,10 +1,3 @@
----
-title: AEM Frontend
-
----
-
-Excellent! We'll now start the **Complete AEM Frontend Master Course (Beginner → Advanced)** in the same detailed style as the backend course, with explanations, code, diagrams, real-world examples, best practices, interview questions, and enterprise scenarios.
-
 # AEM Frontend Master Course (30 Chapters)
 
 ## Module 1: Frontend Fundamentals
@@ -716,30 +709,6 @@ A strong answer is:
 * Adobe Core Components are built using semantic HTML, so following the same approach keeps custom components consistent with Adobe best practices.
 
 ---
-
-# Next Chapter: CSS3 Complete (Beginner → Advanced)
-
-We'll cover:
-
-* CSS Selectors
-* Box Model
-* Display
-* Position
-* Flexbox
-* CSS Grid
-* Media Queries
-* Animations
-* Transitions
-* Variables
-* SCSS Basics
-* Real AEM Component Styling
-* Responsive Layouts
-* Enterprise Best Practices
-* Interview Questions
-
-This will give you the CSS knowledge needed to build and customize modern AEM components.
-Excellent! Let's continue with the **AEM Frontend Master Course**.
-
 # Chapter 2: CSS3 Complete (Beginner → Advanced) ⭐⭐⭐⭐⭐
 
 CSS (Cascading Style Sheets) is used to style HTML elements. In AEM, CSS is usually delivered through **Client Libraries (ClientLibs)**.
@@ -1423,30 +1392,6 @@ A strong answer is:
 This demonstrates practical frontend knowledge aligned with modern AEM development.
 
 ---
-
-# Next Chapter: JavaScript ES6+ (Complete)
-
-We'll cover:
-
-* Variables (`var`, `let`, `const`)
-* Functions
-* Arrow Functions
-* Objects & Arrays
-* DOM Manipulation
-* Events
-* Promises
-* Async/Await
-* Fetch API
-* Modules
-* Complete examples
-* AEM JavaScript integration
-* Interview questions
-
-JavaScript is essential for building interactive AEM components such as navigation menus, carousels, forms, dialogs, and SPA integrations.
-Excellent! Now we'll learn **JavaScript ES6+**, which is the **most important frontend programming language** for AEM. Every interactive AEM component (Navigation, Carousel, Search, Forms, Dialogs, etc.) uses JavaScript.
-
----
-
 # Chapter 3: JavaScript ES6+ (Beginner → Advanced) ⭐⭐⭐⭐⭐
 
 ---
@@ -2213,31 +2158,6 @@ A strong answer is:
 5. Handle loading states and errors gracefully.
 
 This is the standard pattern used in modern AEM applications.
-
----
-
-# Next Chapter: **Advanced JavaScript (ES6+ Deep Dive)** ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* Closures
-* Hoisting
-* Scope
-* Event Loop
-* Call Stack
-* Callback Queue
-* Microtasks
-* `this` keyword
-* `call()`, `apply()`, `bind()`
-* Prototype & Inheritance
-* Classes
-* Debouncing & Throttling
-* Memory Leaks
-* Complete interview questions
-
-These are some of the **most frequently asked JavaScript interview topics** for AEM Frontend and Full Stack developers.
-Excellent! Now we'll learn **Advanced JavaScript (ES6+ Deep Dive)**. This is one of the **most important interview topics** for AEM Frontend, React, and Full Stack Developer interviews.
-
 ---
 
 # Chapter 4: Advanced JavaScript (ES6+ Deep Dive) ⭐⭐⭐⭐⭐
@@ -2922,28 +2842,6 @@ This demonstrates both JavaScript expertise and practical AEM frontend knowledge
 
 ---
 
-# Next Chapter: **TypeScript (Complete)** ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* What TypeScript is.
-* Type annotations.
-* Interfaces.
-* Classes.
-* Generics.
-* Enums.
-* Modules.
-* Type narrowing.
-* Optional chaining.
-* TypeScript in AEM and React.
-* Enterprise examples.
-* Interview questions.
-
-TypeScript is widely used in **React-based AEM projects** and modern frontend development because it provides static type checking and improves maintainability.
-Excellent! Now we'll learn **TypeScript**, which is used in **React**, **Angular**, and many **modern AEM frontend projects**. If you're working with the **AEM SPA Editor** or a React frontend, TypeScript is a valuable skill.
-
----
-
 # Chapter 5: TypeScript (Beginner → Advanced) ⭐⭐⭐⭐⭐
 
 ---
@@ -3564,27 +3462,6 @@ A strong answer is:
 * It scales well for large enterprise applications like React-based AEM frontends.
 
 ---
-
-# Next Chapter: **Node.js & npm (Complete)** ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* What Node.js is.
-* npm and `package.json`.
-* Installing packages.
-* Scripts.
-* Common frontend build tools.
-* How `ui.frontend` works in AEM.
-* Webpack integration.
-* ClientLib generation.
-* Real enterprise project setup.
-* Interview questions.
-
-This chapter is essential because **every modern AEM frontend project** relies on Node.js, npm, and build tools to generate optimized Client Libraries.
-Excellent! Now let's learn **Node.js & npm**, which are the foundation of the **AEM Frontend Build System**. Every modern AEM frontend project (especially with `ui.frontend`) uses Node.js, npm, Webpack, and ClientLib generation.
-
----
-
 # Chapter 6: Node.js & npm (Beginner → Advanced) ⭐⭐⭐⭐⭐
 
 ---
@@ -4130,28 +4007,6 @@ A strong answer is:
 This clearly distinguishes **AEM's Java backend** from the **frontend build pipeline**, which is a common interview topic.
 
 ---
-
-# Next Chapter: Webpack (Complete) ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* What Webpack is.
-* Entry and Output.
-* Loaders.
-* Plugins.
-* SCSS compilation.
-* Babel.
-* TypeScript integration.
-* Asset optimization.
-* ClientLib generation.
-* Enterprise AEM frontend build pipeline.
-* Interview questions.
-
-Webpack is the **heart of the modern AEM frontend build process**, and understanding it is essential for working on enterprise AEM projects.
-Excellent! Now let's learn **Webpack**, which is the **core build tool** used in modern AEM frontend projects. Every enterprise AEM project with a `ui.frontend` module uses Webpack to bundle JavaScript, compile SCSS, optimize assets, and generate Client Libraries.
-
----
-
 # Chapter 7: Webpack Complete (Beginner → Advanced) ⭐⭐⭐⭐⭐
 
 ---
@@ -4892,28 +4747,6 @@ This demonstrates a complete understanding of the modern AEM frontend pipeline.
 
 ---
 
-# Next Chapter: SCSS (Sass) Complete ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* Variables
-* Nesting
-* Mixins
-* Functions
-* Partials
-* Imports
-* Inheritance
-* Responsive Mixins
-* Enterprise folder structure
-* SCSS in AEM ClientLibs
-* Best practices
-* Interview questions
-
-SCSS is the preferred way to write maintainable CSS in enterprise AEM projects because it improves reusability, organization, and scalability.
-Excellent! Now let's learn **SCSS (Sass)**, which is the standard way to write CSS in **enterprise AEM projects**. Almost every modern AEM project uses SCSS because it's easier to maintain than plain CSS.
-
----
-
 # Chapter 8: SCSS (Sass) Complete ⭐⭐⭐⭐⭐
 
 ---
@@ -5456,33 +5289,6 @@ A strong answer is:
 * It scales much better for large enterprise applications with hundreds of components.
 
 ---
-
-# 🎯 Next Chapter: HTL (Sightly) Complete ⭐⭐⭐⭐⭐
-
-This is **the most important AEM Frontend topic**.
-
-We'll cover in detail:
-
-* HTL Syntax
-* Expressions (`${}`)
-* `data-sly-use`
-* `data-sly-test`
-* `data-sly-list`
-* `data-sly-repeat`
-* `data-sly-resource`
-* `data-sly-include`
-* `data-sly-template`
-* `data-sly-call`
-* Context-aware escaping
-* Sling Models integration
-* Core Components integration
-* Real enterprise examples
-* Best practices
-* 50+ interview questions
-
-**HTL is the heart of AEM frontend development**, and mastering it is essential for becoming an AEM Full Stack Developer.
-Excellent! Now we'll start the **most important AEM Frontend topic**.
-
 # Chapter 9: HTL (Sightly) Complete (Beginner → Advanced) ⭐⭐⭐⭐⭐
 
 > **HTL (HTML Template Language)**, formerly called **Sightly**, is Adobe's recommended templating language for AEM. Almost every AEM component is built using HTL.
@@ -6127,29 +5933,6 @@ Explain:
 This separation of responsibilities is a core principle of clean AEM development.
 
 ---
-
-## Next Chapter: Client Libraries (ClientLibs) ⭐⭐⭐⭐⭐
-
-We'll cover in depth:
-
-* What ClientLibs are
-* Folder structure
-* `css.txt` and `js.txt`
-* Categories
-* Dependencies
-* Embedding ClientLibs
-* Loading CSS and JavaScript in HTL
-* ClientLib generation from `ui.frontend`
-* Cache busting
-* Performance optimization
-* Real enterprise examples
-* Complete interview questions
-
-**ClientLibs are the backbone of frontend asset management in AEM**, and every AEM frontend developer should understand them thoroughly.
-Excellent! Now we'll learn **Client Libraries (ClientLibs)**, one of the **most important AEM Frontend topics**. Every AEM project uses ClientLibs to manage CSS and JavaScript.
-
----
-
 # Chapter 10: Client Libraries (ClientLibs) Complete ⭐⭐⭐⭐⭐
 
 ---
@@ -6811,33 +6594,6 @@ A strong answer is:
 5. For modern projects, generate the ClientLib automatically from the `ui.frontend` module using Webpack.
 
 This is the **Adobe-recommended approach** used in enterprise AEM projects.
-
----
-
-# 🎯 Next Chapter: Granite UI Dialogs (Complete) ⭐⭐⭐⭐⭐
-
-In the next lesson, we'll cover:
-
-* Granite UI
-* Touch UI Dialogs
-* TextField
-* PathField
-* Select
-* Checkbox
-* Multifield
-* FileUpload
-* Tabs
-* Composite Multifield
-* Validation
-* Show/Hide fields
-* Coral UI components
-* Complete dialog XML
-* Real enterprise examples
-* Interview questions
-
-**Granite UI Dialogs are one of the most frequently asked AEM frontend interview topics**, because every custom component requires an authoring dialog.
-Excellent! Now let's learn **Granite UI Dialogs**, one of the **most important AEM Frontend topics**. Every AEM component needs a dialog so that authors can configure it. If you know Granite UI well, you can build almost any AEM component.
-
 ---
 
 # Chapter 11: Granite UI Dialogs (Beginner → Advanced) ⭐⭐⭐⭐⭐
@@ -7456,32 +7212,6 @@ Explain that:
 * **HTL** renders the values on the page.
 
 This is the complete lifecycle of an AEM component and is one of the most frequently asked interview topics.
-
----
-
-## 🎯 Next Chapter: Core Components Customization ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* Proxy Components
-* `sling:resourceSuperType`
-* Extending Core Components
-* Custom Sling Models
-* Custom HTL
-* Style System
-* Policies
-* Real enterprise customization examples
-* Best practices
-* Interview questions
-
-This is the standard approach for customizing Adobe Core Components in enterprise AEM projects.
-Excellent! Now we'll learn **Core Components Customization**, which is one of the **most important topics for experienced AEM developers (3–10 years)**.
-
-> **Interview Question:** *"Do you create components from scratch or extend Core Components?"*
-
-The expected answer in most enterprise projects is:
-
-> **"We extend Adobe Core Components using Proxy Components and `sling:resourceSuperType` instead of copying them."**
 
 ---
 
@@ -8121,27 +7851,6 @@ Then explain:
 This is exactly how enterprise AEM projects are expected to customize Core Components.
 
 ---
-
-# 🎯 Next Chapter: Editable Templates & Template Policies ⭐⭐⭐⭐⭐
-
-In the next chapter, we'll cover:
-
-* Editable Templates
-* Template Types
-* Initial Content
-* Structure
-* Policies
-* Layout Container
-* Responsive Grid
-* Allowed Components
-* Style System
-* Template Editor
-* Real enterprise examples
-* Complete interview questions
-
-**Editable Templates are one of the most frequently asked AEM interview topics** because nearly all modern AEM projects use them instead of Static Templates.
-Excellent! Now we'll learn one of the **most important AEM topics**.
-
 # Chapter 13: Editable Templates & Template Policies (Beginner → Advanced) ⭐⭐⭐⭐⭐
 
 > **Interview Question:** *"What is the difference between Static Templates and Editable Templates?"*
@@ -8786,26 +8495,6 @@ Then explain:
 This demonstrates a solid understanding of modern AEM authoring and is a very common enterprise interview topic.
 
 ---
-
-# 🎯 Next Chapter: SPA Editor & React Integration ⭐⭐⭐⭐⭐
-
-We'll cover:
-
-* What SPA Editor is.
-* Why React is used with AEM.
-* SPA Architecture.
-* Editable React Components.
-* React Mapping.
-* Model Manager.
-* JSON Model Exporter.
-* GraphQL integration.
-* Routing.
-* Real enterprise examples.
-* Complete interview questions.
-
-This chapter is especially valuable if you're targeting **AEM Full Stack Developer** roles that use **React with AEM**.
-Excellent! Now we'll learn one of the **most advanced frontend topics in AEM**.
-
 # Chapter 14: AEM SPA Editor & React Integration (Beginner → Advanced) ⭐⭐⭐⭐⭐
 
 > **Interview Question:** *"How does React work with AEM?"*
@@ -9599,13 +9288,3 @@ You have now completed a **comprehensive AEM Full Stack curriculum** covering:
 * Core Components
 * Editable Templates
 * React & SPA Editor
-
-### Recommended Next Step
-
-Now that you understand the technologies individually, the best way to become interview-ready is to build **3 complete real-world AEM projects**, such as:
-
-1. **Corporate Website** (editable templates, Core Components, Dispatcher).
-2. **E-commerce Website** (products, search, GraphQL, React).
-3. **Banking or Healthcare Portal** (secure authoring, workflows, integrations, Cloud deployment).
-
-Building these projects will help you connect all the concepts you've learned and prepare you for real enterprise development and technical interviews.
